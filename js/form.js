@@ -12,24 +12,24 @@ $.post("process.php",{
  Name: name,
  Message: msg
 },
-			function(data) {
-			//alert(data);
-			$('#form')[0].reset(); //To reset form fields after submission
+	function(data) {
+	//alert(data);
+	$('#form')[0].reset(); //To reset form fields after submission
 
-			$('#alert').animate({ //for fade in animation
-				opacity:'show',
-				height:'show',
-				marginTop:'show',
-				marginBottom:'show',
-				paddingTop:'show',
-				paddingBottom:'show'
-			});
+	$('#alert').animate({ //for fade in animation
+		opacity:'show',
+		height:'show',
+		marginTop:'show',
+		marginBottom:'show',
+		paddingTop:'show',
+		paddingBottom:'show'
+	});
 			
-				$('#alert').fadeTo(2000,500).slideUp(500,function(){ //fade out
-					$('#alert').addClass('hiden'); //adds a class .hidden
-				});
+		$('#alert').fadeTo(2000,500).slideUp(500,function(){ //fade out
+		$('#alert').addClass('hiden'); //adds a class .hidden
+	});
 		
-			});
+	});
     
     }
 });
